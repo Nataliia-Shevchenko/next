@@ -8,7 +8,7 @@ import Profile from "@components/Profile";
 
 const MyProfile = () => {
 
-    const {data: session} = useSession;
+    const {data: session} = useSession();
 
     const [posts, setPosts] = useState([]);
 
@@ -30,7 +30,7 @@ const MyProfile = () => {
   };
 
   const handleDelete = async () => {
-    
+
   };
 
   return (
